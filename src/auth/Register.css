@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .page {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float:center;
+    background-color: rgb(236, 236, 238);
+    overflow: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 1rem 3rem;
+    padding-bottom: 2rem;
+    border-radius: 0.5rem;
+    /* border-top: rgb(80, 98, 255) 0.5rem solid; */
+  }
+  
+  h2 {
+    margin: 0.7rem 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  
+  .formInternalDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    line-height: normal;
+    justify-content: space-evenly;
+  }
+  .formInternalDiv2{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    line-height: normal;
+    justify-content: space-evenly;
+    border: 1px solid gray;
+  }
+  
+  input {
+    height:25px;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid gray;
+    font-size: 0.8rem;
+  }
+  textarea {
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid gray;
+    font-size: 0.8rem;
+  }
+  
+  button {
+    background-color: rgb(80, 98, 255);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0.3rem;
+  }
+  
+  span a {
+    text-decoration: none;
+    color: rgb(80, 98, 255);
+  }
+  
+  .private {
+    background-color: rgb(80, 98, 255);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .private button {
+    background-color: black;
+    padding: 2rem 10rem;
+    font-size: 4rem;
+    border-radius: 2rem;
+  }
+  .react-datepicker-wrapper{
+    display: block !important;
+    width: 100%;
+}
+.react-datepicker__input-container{
+  display: block !important;
+  width: 100%;
+}
+.react-datepicker__input-container input {
+    display: block !important;
+    width: 100%;
+}
+.react-datepicker__month-container{
+  display: block !important;
+  width: 100%;
+}

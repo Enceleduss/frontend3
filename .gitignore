@@ -40,3 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 /app/expression-registry.json
+
+# Parcel
+/dist
+/.parcel-cache

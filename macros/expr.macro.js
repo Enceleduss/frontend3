@@ -23,7 +23,7 @@ function exprMacro({ references, state, babel }) {
       const id = generateExpressionId(expression);
 
       // Register the expression with the backend
-      fetch('http://localhost:8080/api/register-expression', {
+      fetch('http://localhost:9046/api/register-expression', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id, expression }),
