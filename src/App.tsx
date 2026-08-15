@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {BrowserRouter, Routes, Route, createBrowserRouter, RouterProvider} from 'react-router-dom';
+import {UserDetailsContext} from './auth/UserDetailsContext';
 import Login from './auth/Login';
 import Register from './auth/Register';
+import Landing from './app-layout/Landing';
 const router = createBrowserRouter([
     {
         path: "/login",
@@ -12,13 +14,16 @@ const router = createBrowserRouter([
         element: <Register />
     },
     {
-        path: "/",
-        element: <h1>Hello, Parcel + React!</h1>
+        path: "/landing",
+        element: <Landing />
     }
 ]);
 const App = () => {
+    const [userDetails, setUserDetails] = useState<any | null>(null);
     return (
-        <RouterProvider router={router} />
+        <UserDetailsContext value={{ userDetails, setUserDetails }}>
+            <RouterProvider router={router} />
+        </UserDetailsContext>
     );
 };
 

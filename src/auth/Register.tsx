@@ -45,7 +45,7 @@ function Register() {
 
   const onSubmit = async (values: any) => {
     try {
-      const { data } = await axios.post("http://localhost:9046/register", {
+      const { data } = await axios.post("/api/register", {
         ...values,
       });
 
